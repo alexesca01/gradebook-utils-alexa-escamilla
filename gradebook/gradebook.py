@@ -2,7 +2,6 @@
 """
 Gradebook utility functions for operating grades (computing, sorting, etc.).
 """
-
 def average(scores):
     """Compute the average of a list of scores."""
     return sum(scores) / len(scores) if scores else 0.0
