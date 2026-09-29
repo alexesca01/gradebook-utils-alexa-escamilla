@@ -2,6 +2,8 @@
 """
 Gradebook utility functions for operating grades (computing, sorting, etc.).
 """
+
+
 def average(scores):
     """Compute the average of a list of scores."""
     return sum(scores) / len(scores) if scores else 0.0
@@ -31,6 +33,8 @@ def median(scores):
         return scores[mid]
     else:
         return (scores[mid - 1] + scores[mid]) / 2
+
+
 def letter_grade(score):
     """Return a letter grade (A, B, C, D, F) for a numeric score."""
     if score >= 90:
